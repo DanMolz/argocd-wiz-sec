@@ -1,6 +1,6 @@
 wizApiToken:
-  clientId: "akcibu6cavbflbwwhfowntnho46i7sa2ctpfelmcl2zdbcvv3da2"
-  clientToken: "0qAzBsXJowr31gm9yxL2N3Yxhdjsbdi38ZsKkuVEkBpuCMLKUNwUqX4KIXsZ7Ua"
+  # clientId: "akcibu6cavbflbwwhfowntnho46i7sa2ctpfelmcl2zdbcvv3da2"
+  # clientToken: "0qAzBsXJowr31gm9yxL2N3Yxhdjsbdi38ZsKkuVEkBpuCMLKUNwUqX4KIXsZ7Ua"
   clientEndpoint: "" # Set to 'gov' for gov tenants only, otherwise leave blank
 broker:
   enabled: true
