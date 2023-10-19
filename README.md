@@ -13,7 +13,7 @@ kubectl -n wiz-kubernetes-connector create secret generic wiz-kubernetes-connect
   --from-literal=clientToken=123456789
 ```
 
-## Create the Wiz Kubernetes Application
+## Create the Wiz Kubernetes Connector Application
 ```sh
 git clone https://github.com/DanMolz/argocd-wiz-sec.git
 kubectl apply -f prod/wiz-kubernetes-connector.yaml
