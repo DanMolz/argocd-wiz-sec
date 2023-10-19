@@ -1,4 +1,4 @@
-# How to deploy Wiz Kuberentes Connector with ArgoCD
+# How to deploy Wiz Kubernetes Connector with ArgoCD
 
 ## Install ArgoCD to your kubernetes cluster via helm
 ```sh
