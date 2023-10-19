@@ -2,6 +2,12 @@ wizApiToken:
   # clientId: "akcibu6cavbflbwwhfowntnho46i7sa2ctpfelmcl2zdbcvv3da2"
   # clientToken: "0qAzBsXJowr31gm9yxL2N3Yxhdjsbdi38ZsKkuVEkBpuCMLKUNwUqX4KIXsZ7Ua"
   clientEndpoint: "" # Set to 'gov' for gov tenants only, otherwise leave blank
+  secret:
+    # Should a Secret be created by the chart or not.
+    # Set this to false if you wish to create the Secret yourself or using another tool.
+    # The Secret should contain clientId for the ID and clientToken for the token.
+    create: false
+    name: "wiz-kubernetes-connector"
 broker:
   enabled: true
 autoCreateConnector:
