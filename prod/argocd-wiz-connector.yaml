@@ -1,1 +1,24 @@
-
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: wiz-kubernetes-connector
+spec:
+  destination:
+    name: ''
+    namespace: wiz-kubernetes-connector
+    server: 'https://kubernetes.default.svc'
+  sources:
+  - repoURL: 'https://charts.wiz.io/'
+    chart: wiz-kubernetes-connector
+    targetRevision: 2.4.0
+    helm:
+      valueFiles:
+      - $values/common/common-values.yaml
+      - $values/prod/prod-values.yaml
+  - repoURL: 'https://github.com/DanMolz/argocd-wiz-sec.git'
+    targetRevision: master
+    ref: values
+  project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
